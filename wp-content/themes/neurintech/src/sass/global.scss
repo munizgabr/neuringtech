@@ -1,0 +1,46 @@
+@import "./components/avariables";
+@import "./components/amixins";
+@import "./components/reset";
+@import "./components/formularios";
+@import "./components/fonts";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/menu";
+@import "./components/buttons";
+@import "./components/cookie";
+@import "./components/modal";
+@import "./components/contentMain";
+@import "./components/about-us";
+@import "./components/class";
+@import "./components/location";
+@import "./components/delivery";
+
+
+
+.center {
+	width: 1200px;
+} 
+
+@media screen and (max-width: 1200px) {
+	.center {
+		width: 95%
+	}
+}
+.h1-hide {
+
+	text-indent: -99999px;
+	width: 0;
+	height: 0;
+	float: left;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -25px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+	background-color: #f73c76;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f78da7;
+}

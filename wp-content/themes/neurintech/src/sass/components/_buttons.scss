@@ -1,0 +1,18 @@
+@import "avariables";
+
+.btn {
+
+	display: inline-block;
+	padding: 15px 30px;
+	font-weight: 800;
+	text-align: center;
+	background-color: #000;
+	color: white;
+
+	&:hover {
+		transition: all .3s ease-in;
+		text-decoration: none;
+		background-color: lighten($color: #000000, $amount: 20%);
+		color: white;
+	}
+}

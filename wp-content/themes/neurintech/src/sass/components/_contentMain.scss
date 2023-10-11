@@ -1,0 +1,58 @@
+.discover {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-family: rebond grotesque;
+    margin-bottom: 40px;
+    h2 {
+        font-family: plakat;
+        color: black;
+        font-size: 8em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    a {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        &:hover {
+            text-decoration: none;
+        }
+
+    }
+    span {
+        color: black;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    .courses {
+        align-self: end;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .discover {
+        h2 {
+            font-size: 7em;
+        }
+    }
+}
+
+@media screen and (max-width:880px) {
+    .discover {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        place-items: center;
+        h2 {
+            font-size: 6em;
+        }
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .discover {
+    
+        h2 {
+            font-size: 6em;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.about-us{
+    padding: 20px 0;
+}
+.about-us__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font-family: rebond grotesque negrito;
+        font-size: 2em;
+    }
+    p {
+        font-family: rebond grotesque;
+        color: black;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .about-us__content {
+        grid-template-columns: 1fr;
+    }
+}

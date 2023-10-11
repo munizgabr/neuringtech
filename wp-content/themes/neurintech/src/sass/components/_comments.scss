@@ -1,0 +1,249 @@
+@import "avariables";
+@import "amixins";
+
+.comment-respond {
+
+	text-align: left;
+	margin-bottom: 35px;
+
+	label {
+
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+}
+
+.content-page {
+
+	.wrapper-page {
+
+		.comments {
+
+			.comment-reply-link {
+
+				color: #fff;
+
+				&:hover {
+
+					text-decoration: none;
+				}
+			}
+		}
+
+		ol {
+
+			&.commentlist {
+
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+
+.commentlist {
+
+	padding: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+	li {
+
+		margin-top: 20px;
+	    color: #000;
+	    float: left;
+	    width: 100%;
+	    border-bottom: 1px solid #ccc;
+	    padding-bottom: 20px;
+	    list-style: none;
+	    background: none !important;
+
+	    &:last-child {
+
+	    	border-bottom: 0;
+	    }
+
+		.children {
+
+			li {
+
+				border-top: 1px dashed #ccc;
+				list-style: none;
+				padding-left: 30px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				width: 100%;
+
+				&:last-child {
+
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+
+				&:first-child {
+
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.comments {
+
+	width: 100%;
+	float: left;
+	display: inline-block;
+
+	input[type="submit"] {
+
+		margin-top: 0;
+	}
+
+	@include placeholder {
+
+		color: #909090;
+	}
+
+	.title {
+
+		margin-bottom: 20px;
+	}
+
+	form {
+
+		p {
+
+			width: 100%;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		div {
+
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 20px;
+
+			&:last-child {
+
+				margin-bottom: 0;
+			}
+		}
+
+		div.wpcf7-validation-errors {
+
+			color: red;
+		}
+
+		span.wpcf7-not-valid-tip {
+
+			color: red;
+		}
+	}
+
+
+	.fn {
+
+		a {
+
+			color: #333;
+
+		}
+	}
+
+	a {
+
+		font-size: 15px !important;
+
+	}
+
+	.comment-reply-link {
+
+		background: $blue;
+		color: #fff;
+		padding: 3px 8px 4px;
+		font-size: 0.8em !important;
+		text-decoration: none;
+
+		&:hover {
+
+			background-color: darken($blue, 10%);
+		}
+
+	}
+
+	p {
+
+		font-size: 14px !important;
+		line-height: 25px !important;
+		padding-top: 0;
+		margin-top: 0;
+
+	}
+}
+
+
+.comment-meta {
+
+	a {
+
+		color: #888;
+		margin-bottom: 0px;
+		display: inline-block;
+		font-size: 11px !important;
+	}
+}
+
+.reply {
+
+	a {
+
+		font-size: 15px;
+		padding: 5px 20px;
+		color: #777;
+	}
+}
+
+.comment-author {
+
+	display: inline-block;
+
+	img {
+
+		border-radius: 100%;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+}
+
+.children {
+
+	width: 100%;
+
+}
+
+#respond p {
+
+	padding-bottom: 0;
+	font-size: 1.2em;
+
+}
+
+.says {
+
+	color: #333;
+	font-size: 15px;
+}
+
+.comment-awaiting-moderation {
+
+	font-size: 15px;
+	color: #333;
+}
