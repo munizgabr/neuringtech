@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Landing Page
+ * Template Name: Elementos
  * @package Neuring Tech
  * @since 0.0.1
  */
@@ -10,19 +10,14 @@ get_header();?>
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post();
 			$id_post = get_the_ID();
-				if( have_rows('landing-page', $id_post) ):
-				while ( have_rows('landing-page', $id_post) ) : the_row();
+				if( have_rows('elements', $id_post) ):
+				while ( have_rows('elements', $id_post) ) : the_row();
 					array_map(function($component) {
 						if( get_row_layout() == $component ):
 							get_template_part( 'content/content', $component );
 						endif;
 					}, [
-						'discover',
-						'about-us',
-						'class',
-						'location',
-						'delivery',
-						'contact',
+						
 					]);
 				endwhile;
 				else :
