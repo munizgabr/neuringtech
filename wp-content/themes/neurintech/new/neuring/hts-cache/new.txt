@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+18:10:25	76/76	---MCZ	200	added ('OK')	text/plain	date:Wed,%2011%20Oct%202023%2021:10:26%20GMT	https://silicon.madrasthemes.com/robots.txt		(from )
+18:10:26	134156/134156	---MCZ	200	added ('OK')	text/html	date:Wed,%2011%20Oct%202023%2021:10:26%20GMT	https://silicon.madrasthemes.com/landing-digital-agency/	D:/xampp/htdocs/neuring/neuring/silicon.madrasthemes.com/landing-digital-agency/index.html	(from )
